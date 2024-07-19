@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1680.0, 1050.0 ],
+		"rect" : [ 0.0, 53.0, 1680.0, 1119.0 ],
 		"openrect" : [ 0.0, 0.0, 1680.0, 1119.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -181,7 +181,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 268.8888800740242, 1283.789687955082627, 163.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "correctSoundPlayingTextEng"
 				}
 
@@ -246,7 +245,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 792.0, 498.957446336746216, 24.0, 24.0 ]
+					"patching_rect" : [ 792.0, 498.957446336746216, 24.0, 24.0 ],
+					"varname" : "button[24]"
 				}
 
 			}
@@ -572,7 +572,7 @@
 						"RestartButton" : [ 0.0 ],
 						"button" : [ 1.0 ],
 						"button[10]" : [ 1.0 ],
-						"button[11]" : [ 0.0 ],
+						"button[11]" : [ 1.0 ],
 						"button[12]" : [ 1.0 ],
 						"button[13]" : [ 1.0 ],
 						"button[14]" : [ 1.0 ],
@@ -583,9 +583,10 @@
 						"button[19]" : [ 1.0 ],
 						"button[1]" : [ 1.0 ],
 						"button[20]" : [ 1.0 ],
-						"button[21]" : [ 0.0 ],
+						"button[21]" : [ 1.0 ],
 						"button[22]" : [ 1.0 ],
 						"button[23]" : [ 0.0 ],
+						"button[24]" : [ 1.0 ],
 						"button[2]" : [ 1.0 ],
 						"button[3]" : [ 1.0 ],
 						"button[4]" : [ 1.0 ],
@@ -1562,7 +1563,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1483.063829779624939, 21.768242349624643, 50.0, 22.0 ],
-					"text" : "30"
+					"text" : "27"
 				}
 
 			}
