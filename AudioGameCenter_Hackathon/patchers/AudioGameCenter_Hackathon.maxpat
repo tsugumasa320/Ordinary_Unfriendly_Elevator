@@ -10,9 +10,10 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 99.0, 77.0, 1367.0, 855.0 ],
+		"rect" : [ 34.0, 87.0, 1680.0, 1050.0 ],
+		"openrect" : [ 0.0, 0.0, 1680.0, 1119.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -31,7 +32,7 @@
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
+		"devicewidth" : 1680.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
@@ -40,6 +41,489 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.75 ],
+					"fontface" : 0,
+					"fontsize" : 150.0,
+					"hidden" : 1,
+					"id" : "obj-143",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1428.053513050079346, 1571.192496716976166, 620.0, 203.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 547.0, 434.0, 619.0, 203.0 ],
+					"text" : "正解🙆️",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textjustification" : 1,
+					"varname" : "correctText"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-260",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "", "" ],
+					"patching_rect" : [ 1137.0, 608.0, 58.0, 22.0 ],
+					"text" : "array.pop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-255",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 449.579805135726929, 1284.033536911010742, 89.0, 22.0 ],
+					"text" : "GameStartText"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-254",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1210.877659559249878, 965.0, 53.0, 22.0 ],
+					"text" : "s ---hide"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-253",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1210.877659559249878, 931.932717561721802, 89.0, 22.0 ],
+					"text" : "GameStartText"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-246",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1226.377659559249878, 794.2504985567939, 89.0, 22.0 ],
+					"text" : "GameStartText"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-242",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1226.377659559249878, 831.0, 58.0, 22.0 ],
+					"text" : "s ---show"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 72.0,
+					"hidden" : 1,
+					"id" : "obj-241",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1621.270336747169495, 989.0, 842.0, 159.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 405.428596973419189, 449.25, 857.142806053161621, 159.0 ],
+					"text" : "一階の音を忘れない内に\nゲームスタートです。",
+					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"textjustification" : 1,
+					"varname" : "GameStartText"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-237",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1088.5, 764.51613450050354, 163.0, 22.0 ],
+					"text" : "correctSoundPlayingTextEng"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-233",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 799.259233057498932, 296.0, 163.0, 22.0 ],
+					"text" : "correctSoundPlayingTextEng"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-221",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 268.8888800740242, 1283.789687955082627, 163.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"text" : "correctSoundPlayingTextEng"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 48.0,
+					"hidden" : 1,
+					"id" : "obj-218",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1700.270336747169495, 946.0, 684.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 539.0, 613.0, 646.0, 60.0 ],
+					"text" : "Correct answer sound playing",
+					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"varname" : "correctSoundPlayingTextEng"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-217",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 464.916896224021912, 688.347446336746088, 152.0, 22.0 ],
+					"text" : "r ---finishedContinueSound"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-212",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1318.0, 1084.0, 154.0, 22.0 ],
+					"text" : "s ---finishedContinueSound"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-211",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1318.0, 1051.0, 34.0, 22.0 ],
+					"text" : "sel 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-207",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 792.0, 498.957446336746216, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-203",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 282.0, 235.0, 82.0, 22.0 ],
+					"text" : "RestartButton"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 0.82 ],
+					"bgcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 0.28 ],
+					"fontsize" : 36.0,
+					"id" : "obj-172",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1681.847147524356842, 119.5, 79.794822812080383, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 171.0, 41.0, 260.0, 65.0 ],
+					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "RestartButton",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "RestartButton",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Restart(esc)",
+					"varname" : "RestartButton"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-165",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1008.0, 379.0, 78.0, 22.0 ],
+					"text" : "overdrive~ 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-164",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 971.0, 266.0, 78.0, 22.0 ],
+					"text" : "overdrive~ 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-160",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 118.210429797172537, 517.214525139628677, 24.0, 24.0 ],
+					"varname" : "button[23]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-161",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 565.0, 1405.0, 150.0, 86.0 ],
+					"text" : "Todo:\n・異常系処置を対策する\n・キーのどの部分を押せば良いのか説明を入れる\n・クリア時のテキストを入れる"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-159",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1416.0, 913.0, 61.0, 22.0 ],
+					"text" : "clip~ -1. 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-138",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1416.0, 874.5, 56.0, 22.0 ],
+					"text" : "dcblock~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-136",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1326.0, 913.0, 61.0, 22.0 ],
+					"text" : "clip~ -1. 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-116",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1327.0, 874.5, 56.0, 22.0 ],
+					"text" : "dcblock~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 103.710429797172537, 958.0, 53.0, 22.0 ],
+					"text" : "s~ dacR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 22.710429797172544, 958.0, 51.0, 22.0 ],
+					"text" : "s~ dacL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 881.976563692092896, 988.0, 53.0, 22.0 ],
+					"text" : "s~ dacR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-79",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 831.226581871509552, 1012.0, 51.0, 22.0 ],
+					"text" : "s~ dacL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1416.0, 836.0, 81.0, 22.0 ],
+					"text" : "normalize~ 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1326.0, 961.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1416.0, 794.2504985567939, 51.0, 22.0 ],
+					"text" : "r~ dacR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1327.0, 794.2504985567939, 49.0, 22.0 ],
+					"text" : "r~ dacL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1009.49143522977829, 674.235773921012878, 53.0, 22.0 ],
+					"text" : "s~ dacR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 928.612693786621094, 674.235773921012878, 51.0, 22.0 ],
+					"text" : "s~ dacL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1327.0, 836.0, 81.0, 22.0 ],
+					"text" : "normalize~ 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-297",
@@ -47,7 +531,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 559.0, 885.0, 51.0, 23.0 ],
+					"patching_rect" : [ 626.001329779624939, 943.0, 51.0, 23.0 ],
 					"text" : "store 1"
 				}
 
@@ -85,28 +569,30 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 613.0, 1051.0, 151.0, 23.0 ],
 					"restore" : 					{
-						"button" : [ 0.0 ],
-						"button[10]" : [ 0.0 ],
+						"RestartButton" : [ 0.0 ],
+						"button" : [ 1.0 ],
+						"button[10]" : [ 1.0 ],
 						"button[11]" : [ 0.0 ],
-						"button[12]" : [ 0.0 ],
-						"button[13]" : [ 0.0 ],
-						"button[14]" : [ 0.0 ],
-						"button[15]" : [ 0.0 ],
-						"button[16]" : [ 0.0 ],
-						"button[17]" : [ 0.0 ],
-						"button[18]" : [ 0.0 ],
-						"button[19]" : [ 0.0 ],
-						"button[1]" : [ 0.0 ],
-						"button[20]" : [ 0.0 ],
+						"button[12]" : [ 1.0 ],
+						"button[13]" : [ 1.0 ],
+						"button[14]" : [ 1.0 ],
+						"button[15]" : [ 1.0 ],
+						"button[16]" : [ 1.0 ],
+						"button[17]" : [ 1.0 ],
+						"button[18]" : [ 1.0 ],
+						"button[19]" : [ 1.0 ],
+						"button[1]" : [ 1.0 ],
+						"button[20]" : [ 1.0 ],
 						"button[21]" : [ 0.0 ],
-						"button[22]" : [ 0.0 ],
-						"button[2]" : [ 0.0 ],
-						"button[3]" : [ 0.0 ],
-						"button[4]" : [ 0.0 ],
+						"button[22]" : [ 1.0 ],
+						"button[23]" : [ 0.0 ],
+						"button[2]" : [ 1.0 ],
+						"button[3]" : [ 1.0 ],
+						"button[4]" : [ 1.0 ],
 						"button[5]" : [ 0.0 ],
-						"button[6]" : [ 0.0 ],
-						"button[7]" : [ 0.0 ],
-						"button[8]" : [ 0.0 ],
+						"button[6]" : [ 1.0 ],
+						"button[7]" : [ 1.0 ],
+						"button[8]" : [ 1.0 ],
 						"button[9]" : [ 0.0 ],
 						"exitElevator" : [ 0.0 ],
 						"gswitch2" : [ 1 ],
@@ -136,10 +622,10 @@
 						"playlist~[1]" : [ 							{
 								"data" : 								{
 									"clips" : [ 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/MenuBGM(仮).wav",
-											"filename" : "MenuBGM(仮).wav",
+											"absolutepath" : "01_music.wav",
+											"filename" : "01_music.wav",
 											"filekind" : "audiofile",
-											"id" : "u701009816",
+											"id" : "u556004299",
 											"loop" : 1,
 											"content_state" : 											{
 												"loop" : 1
@@ -147,10 +633,10 @@
 
 										}
 , 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/setumeiS.wav",
-											"filename" : "setumeiS.wav",
+											"absolutepath" : "02_setumei.wav",
+											"filename" : "02_setumei.wav",
 											"filekind" : "audiofile",
-											"id" : "u408009910",
+											"id" : "u286004319",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -158,10 +644,11 @@
 
 										}
 , 										{
-											"absolutepath" : "floor1.wav",
-											"filename" : "floor1.wav",
+											"absolutepath" : "03_floor1.wav",
+											"filename" : "03_floor1.wav",
 											"filekind" : "audiofile",
-											"id" : "u467010362",
+											"id" : "u812004327",
+											"selection" : [ 0.0, 0.552795031055901 ],
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -169,10 +656,10 @@
 
 										}
 , 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/STARTdesu.wav",
-											"filename" : "STARTdesu.wav",
+											"absolutepath" : "04_STARTdesu.wav",
+											"filename" : "04_STARTdesu.wav",
 											"filekind" : "audiofile",
-											"id" : "u921010417",
+											"id" : "u530004409",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -180,10 +667,10 @@
 
 										}
 , 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/atari.mp3",
-											"filename" : "atari.mp3",
+											"absolutepath" : "05_atari.mp3",
+											"filename" : "05_atari.mp3",
 											"filekind" : "audiofile",
-											"id" : "u900011106",
+											"id" : "u783004590",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -191,10 +678,10 @@
 
 										}
 , 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/Warning.mp3",
-											"filename" : "Warning.mp3",
+											"absolutepath" : "06_Warning.mp3",
+											"filename" : "06_Warning.mp3",
 											"filekind" : "audiofile",
-											"id" : "u479011110",
+											"id" : "u715004606",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -202,28 +689,10 @@
 
 										}
 , 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/outside.wav",
-											"filename" : "outside.wav",
+											"absolutepath" : "07_outside.wav",
+											"filename" : "07_outside.wav",
 											"filekind" : "audiofile",
-											"id" : "u643011122",
-											"loop" : 0,
-											"content_state" : 											{
-
-											}
-
-										}
- ]
-								}
-
-							}
- ],
-						"playlist~[2]" : [ 							{
-								"data" : 								{
-									"clips" : [ 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav",
-											"filename" : "floor1.wav",
-											"filekind" : "audiofile",
-											"id" : "u436010547",
+											"id" : "u865004626",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -231,10 +700,10 @@
 
 										}
 , 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/2laundry.wav",
-											"filename" : "2laundry.wav",
+											"absolutepath" : "clear.wav",
+											"filename" : "clear.wav",
 											"filekind" : "audiofile",
-											"id" : "u630010578",
+											"id" : "u461011172",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -242,10 +711,10 @@
 
 										}
 , 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/3soujiki.wav",
-											"filename" : "3soujiki.wav",
+											"absolutepath" : "omedeto.wav",
+											"filename" : "omedeto.wav",
 											"filekind" : "audiofile",
-											"id" : "u220010577",
+											"id" : "u587005381",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -253,76 +722,10 @@
 
 										}
 , 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor4.wav",
-											"filename" : "floor4.wav",
+											"absolutepath" : "game over.wav",
+											"filename" : "game over.wav",
 											"filekind" : "audiofile",
-											"id" : "u047010551",
-											"loop" : 0,
-											"content_state" : 											{
-
-											}
-
-										}
-, 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor5.wav",
-											"filename" : "floor5.wav",
-											"filekind" : "audiofile",
-											"id" : "u014010555",
-											"loop" : 0,
-											"content_state" : 											{
-
-											}
-
-										}
-, 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor6.wav",
-											"filename" : "floor6.wav",
-											"filekind" : "audiofile",
-											"id" : "u502010559",
-											"loop" : 0,
-											"content_state" : 											{
-
-											}
-
-										}
-, 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor7.wav",
-											"filename" : "floor7.wav",
-											"filekind" : "audiofile",
-											"id" : "u559010563",
-											"loop" : 0,
-											"content_state" : 											{
-
-											}
-
-										}
-, 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/warabeuta.wav",
-											"filename" : "warabeuta.wav",
-											"filekind" : "audiofile",
-											"id" : "u134011114",
-											"loop" : 0,
-											"content_state" : 											{
-
-											}
-
-										}
-, 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/shizuku.wav",
-											"filename" : "shizuku.wav",
-											"filekind" : "audiofile",
-											"id" : "u024011118",
-											"loop" : 0,
-											"content_state" : 											{
-
-											}
-
-										}
-, 										{
-											"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/boonbon.wav",
-											"filename" : "boonbon.wav",
-											"filekind" : "audiofile",
-											"id" : "u384011126",
+											"id" : "u628005395",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -337,11 +740,10 @@
 						"playlist~[3]" : [ 							{
 								"data" : 								{
 									"clips" : [ 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/elevator.wav",
-											"filename" : "elevator.wav",
+											"absolutepath" : "doaga.wav",
+											"filename" : "doaga.wav",
 											"filekind" : "audiofile",
-											"id" : "u347011102",
-											"selection" : [ 0.0, 1.0 ],
+											"id" : "u555005297",
 											"loop" : 0,
 											"content_state" : 											{
 
@@ -356,79 +758,122 @@
 						"playlist~[4]" : [ 							{
 								"data" : 								{
 									"clips" : [ 										{
-											"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav",
-											"filename" : "floor1.wav",
+											"absolutepath" : "01_floor1.wav",
+											"filename" : "01_floor1.wav",
 											"filekind" : "audiofile",
-											"id" : "u283009884",
-											"loop" : 0,
+											"id" : "u679004646",
+											"selection" : [ 0.535031847133758, 0.0 ],
+											"loop" : 1,
 											"content_state" : 											{
-
+												"loop" : 1
 											}
 
 										}
 , 										{
-											"absolutepath" : "2laundry.wav",
-											"filename" : "2laundry.wav",
+											"absolutepath" : "01_floor1.wav",
+											"filename" : "01_floor1.wav",
 											"filekind" : "audiofile",
-											"id" : "u081009947",
-											"loop" : 0,
+											"id" : "u119001286",
+											"selection" : [ 0.528662420382166, 0.0 ],
+											"loop" : 1,
 											"content_state" : 											{
-
+												"loop" : 1
 											}
 
 										}
 , 										{
-											"absolutepath" : "3soujiki.wav",
-											"filename" : "3soujiki.wav",
+											"absolutepath" : "01_floor1.wav",
+											"filename" : "01_floor1.wav",
 											"filekind" : "audiofile",
-											"id" : "u351009946",
-											"loop" : 0,
+											"id" : "u246001294",
+											"selection" : [ 0.528662420382166, 0.0 ],
+											"loop" : 1,
 											"content_state" : 											{
-
+												"loop" : 1
 											}
 
 										}
 , 										{
-											"absolutepath" : "floor6.wav",
-											"filename" : "floor6.wav",
+											"absolutepath" : "02_2laundry.wav",
+											"filename" : "02_2laundry.wav",
 											"filekind" : "audiofile",
-											"id" : "u266010011",
-											"loop" : 0,
+											"id" : "u133004666",
+											"selection" : [ 0.535031847133758, 0.0 ],
+											"loop" : 1,
 											"content_state" : 											{
-
+												"loop" : 1
 											}
 
 										}
 , 										{
-											"absolutepath" : "boonbon.wav",
-											"filename" : "boonbon.wav",
+											"absolutepath" : "03_3soujiki.wav",
+											"filename" : "03_3soujiki.wav",
 											"filekind" : "audiofile",
-											"id" : "u254010027",
-											"loop" : 0,
+											"id" : "u970004686",
+											"selection" : [ 0.535031847133758, 0.0 ],
+											"loop" : 1,
 											"content_state" : 											{
-
+												"loop" : 1
 											}
 
 										}
 , 										{
-											"absolutepath" : "shizuku.wav",
-											"filename" : "shizuku.wav",
+											"absolutepath" : "04_floor6.wav",
+											"filename" : "04_floor6.wav",
 											"filekind" : "audiofile",
-											"id" : "u133010025",
-											"loop" : 0,
+											"id" : "u667004706",
+											"selection" : [ 0.522292993630573, 0.0 ],
+											"loop" : 1,
 											"content_state" : 											{
-
+												"loop" : 1
 											}
 
 										}
 , 										{
-											"absolutepath" : "warabeuta.wav",
-											"filename" : "warabeuta.wav",
+											"absolutepath" : "05_floor7.wav",
+											"filename" : "05_floor7.wav",
 											"filekind" : "audiofile",
-											"id" : "u217010026",
-											"loop" : 0,
+											"id" : "u414004726",
+											"selection" : [ 0.528662420382166, 0.0 ],
+											"loop" : 1,
 											"content_state" : 											{
+												"loop" : 1
+											}
 
+										}
+, 										{
+											"absolutepath" : "06_boonbon.wav",
+											"filename" : "06_boonbon.wav",
+											"filekind" : "audiofile",
+											"id" : "u092004742",
+											"selection" : [ 0.522292993630573, 0.0 ],
+											"loop" : 1,
+											"content_state" : 											{
+												"loop" : 1
+											}
+
+										}
+, 										{
+											"absolutepath" : "07_potannpotan.wav",
+											"filename" : "07_potannpotan.wav",
+											"filekind" : "audiofile",
+											"id" : "u334004762",
+											"selection" : [ 0.547770700636943, 0.0 ],
+											"loop" : 1,
+											"content_state" : 											{
+												"loop" : 1
+											}
+
+										}
+, 										{
+											"absolutepath" : "08_warabeuta.wav",
+											"filename" : "08_warabeuta.wav",
+											"filekind" : "audiofile",
+											"id" : "u140004826",
+											"selection" : [ 0.560509554140127, 0.0 ],
+											"loop" : 1,
+											"content_state" : 											{
+												"loop" : 1
 											}
 
 										}
@@ -456,7 +901,7 @@
 					"patching_rect" : [ 626.001329779624939, 984.0, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-56", "live.text", "float", 0.0, 5, "obj-96", "live.text", "float", 0.0, 5, "obj-156", "playlist~", "preset_count", 1, 7, "obj-156", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-156", "playlist~", "preset_clipstate", 1, "absolutepath", "buttonClickSound.mp3", 7, "obj-156", "playlist~", "preset_clipstate", 1, "filename", "buttonClickSound.mp3", 7, "obj-156", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-156", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-156", "playlist~", "preset_clipstate", 1, "id", "u785001222", 4, "obj-156", "playlist~", "preset_execute", 5, "obj-184", "gswitch2", "int", 1, 5, "obj-215", "gswitch2", "int", 1, 5, "obj-216", "gswitch2", "int", 1, 5, "obj-11", "live.text", "float", 0.0, 5, "obj-264", "gswitch2", "int", 0, 5, "obj-284", "gswitch2", "int", 0, 5, "obj-222", "gswitch2", "int", 1, 5, "obj-25", "playlist~", "preset_count", 7, 7, "obj-25", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/MenuBGM(仮).wav", 7, "obj-25", "playlist~", "preset_clipstate", 1, "filename", "MenuBGM(仮).wav", 7, "obj-25", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-25", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 1, "id", "u701009816", 7, "obj-25", "playlist~", "preset_content", 1, "loop", 1, 7, "obj-25", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 2, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/setumeiS.wav", 7, "obj-25", "playlist~", "preset_clipstate", 2, "filename", "setumeiS.wav", 7, "obj-25", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 2, "id", "u408009910", 7, "obj-25", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 3, "absolutepath", "floor1.wav", 7, "obj-25", "playlist~", "preset_clipstate", 3, "filename", "floor1.wav", 7, "obj-25", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 3, "id", "u467010362", 7, "obj-25", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 4, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/STARTdesu.wav", 7, "obj-25", "playlist~", "preset_clipstate", 4, "filename", "STARTdesu.wav", 7, "obj-25", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 4, "id", "u921010417", 7, "obj-25", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 5, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/atari.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 5, "filename", "atari.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 5, "id", "u900011106", 7, "obj-25", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 6, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/Warning.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 6, "filename", "Warning.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 6, "id", "u479011110", 7, "obj-25", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 7, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/outside.wav", 7, "obj-25", "playlist~", "preset_clipstate", 7, "filename", "outside.wav", 7, "obj-25", "playlist~", "preset_clipstate", 7, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 7, "id", "u643011122", 4, "obj-25", "playlist~", "preset_execute", 5, "obj-79", "playlist~", "preset_count", 10, 7, "obj-79", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav", 7, "obj-79", "playlist~", "preset_clipstate", 1, "filename", "floor1.wav", 7, "obj-79", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 1, "id", "u436010547", 7, "obj-79", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 2, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/2laundry.wav", 7, "obj-79", "playlist~", "preset_clipstate", 2, "filename", "2laundry.wav", 7, "obj-79", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 2, "id", "u630010578", 7, "obj-79", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 3, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/3soujiki.wav", 7, "obj-79", "playlist~", "preset_clipstate", 3, "filename", "3soujiki.wav", 7, "obj-79", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 3, "id", "u220010577", 7, "obj-79", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 4, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor4.wav", 7, "obj-79", "playlist~", "preset_clipstate", 4, "filename", "floor4.wav", 7, "obj-79", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 4, "id", "u047010551", 7, "obj-79", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 5, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor5.wav", 7, "obj-79", "playlist~", "preset_clipstate", 5, "filename", "floor5.wav", 7, "obj-79", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 5, "id", "u014010555", 7, "obj-79", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 6, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor6.wav", 7, "obj-79", "playlist~", "preset_clipstate", 6, "filename", "floor6.wav", 7, "obj-79", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 6, "id", "u502010559", 7, "obj-79", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 7, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor7.wav", 7, "obj-79", "playlist~", "preset_clipstate", 7, "filename", "floor7.wav", 7, "obj-79", "playlist~", "preset_clipstate", 7, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 7, "id", "u559010563", 7, "obj-79", "playlist~", "preset_clipstate", 8, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 8, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/warabeuta.wav", 7, "obj-79", "playlist~", "preset_clipstate", 8, "filename", "warabeuta.wav", 7, "obj-79", "playlist~", "preset_clipstate", 8, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 8, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 8, "id", "u134011114", 7, "obj-79", "playlist~", "preset_clipstate", 9, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 9, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/shizuku.wav", 7, "obj-79", "playlist~", "preset_clipstate", 9, "filename", "shizuku.wav", 7, "obj-79", "playlist~", "preset_clipstate", 9, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 9, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 9, "id", "u024011118", 7, "obj-79", "playlist~", "preset_clipstate", 10, "filekind", "audiofile", 7, "obj-79", "playlist~", "preset_clipstate", 10, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/boonbon.wav", 7, "obj-79", "playlist~", "preset_clipstate", 10, "filename", "boonbon.wav", 7, "obj-79", "playlist~", "preset_clipstate", 10, "loop", 0, 8, "obj-79", "playlist~", "preset_clipstate", 10, "selection", -1.0, -1.0, 7, "obj-79", "playlist~", "preset_clipstate", 10, "id", "u384011126", 4, "obj-79", "playlist~", "preset_execute", 5, "obj-190", "playlist~", "preset_count", 1, 7, "obj-190", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-190", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/elevator.wav", 7, "obj-190", "playlist~", "preset_clipstate", 1, "filename", "elevator.wav", 7, "obj-190", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-190", "playlist~", "preset_clipstate", 1, "selection", 0.0, 1.0, 7, "obj-190", "playlist~", "preset_clipstate", 1, "id", "u347011102", 4, "obj-190", "playlist~", "preset_execute", 5, "obj-278", "playlist~", "preset_count", 7, 7, "obj-278", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav", 7, "obj-278", "playlist~", "preset_clipstate", 1, "filename", "floor1.wav", 7, "obj-278", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 1, "id", "u283009884", 7, "obj-278", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 2, "absolutepath", "2laundry.wav", 7, "obj-278", "playlist~", "preset_clipstate", 2, "filename", "2laundry.wav", 7, "obj-278", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 2, "id", "u081009947", 7, "obj-278", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 3, "absolutepath", "3soujiki.wav", 7, "obj-278", "playlist~", "preset_clipstate", 3, "filename", "3soujiki.wav", 7, "obj-278", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 3, "id", "u351009946", 7, "obj-278", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 4, "absolutepath", "floor6.wav", 7, "obj-278", "playlist~", "preset_clipstate", 4, "filename", "floor6.wav", 7, "obj-278", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 4, "id", "u266010011", 7, "obj-278", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 5, "absolutepath", "boonbon.wav", 7, "obj-278", "playlist~", "preset_clipstate", 5, "filename", "boonbon.wav", 7, "obj-278", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 5, "id", "u254010027", 7, "obj-278", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 6, "absolutepath", "shizuku.wav", 7, "obj-278", "playlist~", "preset_clipstate", 6, "filename", "shizuku.wav", 7, "obj-278", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 6, "id", "u133010025", 7, "obj-278", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 7, "absolutepath", "warabeuta.wav", 7, "obj-278", "playlist~", "preset_clipstate", 7, "filename", "warabeuta.wav", 7, "obj-278", "playlist~", "preset_clipstate", 7, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 7, "id", "u217010026", 4, "obj-278", "playlist~", "preset_execute" ]
+							"data" : [ 5, "obj-56", "live.text", "float", 0.0, 5, "obj-96", "live.text", "float", 0.0, 5, "obj-156", "playlist~", "preset_count", 1, 7, "obj-156", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-156", "playlist~", "preset_clipstate", 1, "absolutepath", "buttonClickSound.mp3", 7, "obj-156", "playlist~", "preset_clipstate", 1, "filename", "buttonClickSound.mp3", 7, "obj-156", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-156", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-156", "playlist~", "preset_clipstate", 1, "id", "u785001222", 4, "obj-156", "playlist~", "preset_execute", 5, "obj-184", "gswitch2", "int", 1, 5, "obj-215", "gswitch2", "int", 1, 5, "obj-216", "gswitch2", "int", 1, 5, "obj-11", "live.text", "float", 0.0, 5, "obj-264", "gswitch2", "int", 0, 5, "obj-284", "gswitch2", "int", 0, 5, "obj-222", "gswitch2", "int", 1, 5, "obj-25", "playlist~", "preset_count", 7, 7, "obj-25", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/MenuBGM(仮).wav", 7, "obj-25", "playlist~", "preset_clipstate", 1, "filename", "MenuBGM(仮).wav", 7, "obj-25", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-25", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 1, "id", "u701009816", 7, "obj-25", "playlist~", "preset_content", 1, "loop", 1, 7, "obj-25", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 2, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/setumeiS.wav", 7, "obj-25", "playlist~", "preset_clipstate", 2, "filename", "setumeiS.wav", 7, "obj-25", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 2, "id", "u408009910", 7, "obj-25", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 3, "absolutepath", "floor1.wav", 7, "obj-25", "playlist~", "preset_clipstate", 3, "filename", "floor1.wav", 7, "obj-25", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 3, "id", "u467010362", 7, "obj-25", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 4, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/STARTdesu.wav", 7, "obj-25", "playlist~", "preset_clipstate", 4, "filename", "STARTdesu.wav", 7, "obj-25", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 4, "id", "u921010417", 7, "obj-25", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 5, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/atari.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 5, "filename", "atari.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 5, "id", "u900011106", 7, "obj-25", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 6, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/Warning.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 6, "filename", "Warning.mp3", 7, "obj-25", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 6, "id", "u479011110", 7, "obj-25", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "obj-25", "playlist~", "preset_clipstate", 7, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/outside.wav", 7, "obj-25", "playlist~", "preset_clipstate", 7, "filename", "outside.wav", 7, "obj-25", "playlist~", "preset_clipstate", 7, "loop", 0, 8, "obj-25", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "obj-25", "playlist~", "preset_clipstate", 7, "id", "u643011122", 4, "obj-25", "playlist~", "preset_execute", 5, "<invalid>", "playlist~", "preset_count", 10, 7, "<invalid>", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 1, "filename", "floor1.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 1, "id", "u436010547", 7, "<invalid>", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 2, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/2laundry.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 2, "filename", "2laundry.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 2, "id", "u630010578", 7, "<invalid>", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 3, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/3soujiki.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 3, "filename", "3soujiki.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 3, "id", "u220010577", 7, "<invalid>", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 4, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor4.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 4, "filename", "floor4.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 4, "id", "u047010551", 7, "<invalid>", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 5, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor5.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 5, "filename", "floor5.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 5, "id", "u014010555", 7, "<invalid>", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 6, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor6.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 6, "filename", "floor6.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 6, "id", "u502010559", 7, "<invalid>", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 7, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor7.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 7, "filename", "floor7.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 7, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 7, "id", "u559010563", 7, "<invalid>", "playlist~", "preset_clipstate", 8, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 8, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/warabeuta.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 8, "filename", "warabeuta.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 8, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 8, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 8, "id", "u134011114", 7, "<invalid>", "playlist~", "preset_clipstate", 9, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 9, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/shizuku.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 9, "filename", "shizuku.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 9, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 9, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 9, "id", "u024011118", 7, "<invalid>", "playlist~", "preset_clipstate", 10, "filekind", "audiofile", 7, "<invalid>", "playlist~", "preset_clipstate", 10, "absolutepath", "/Users/tsugumasayutani/Downloads/エレベーター音整音/boonbon.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 10, "filename", "boonbon.wav", 7, "<invalid>", "playlist~", "preset_clipstate", 10, "loop", 0, 8, "<invalid>", "playlist~", "preset_clipstate", 10, "selection", -1.0, -1.0, 7, "<invalid>", "playlist~", "preset_clipstate", 10, "id", "u384011126", 4, "<invalid>", "playlist~", "preset_execute", 5, "obj-190", "playlist~", "preset_count", 1, 7, "obj-190", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-190", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/elevator.wav", 7, "obj-190", "playlist~", "preset_clipstate", 1, "filename", "elevator.wav", 7, "obj-190", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-190", "playlist~", "preset_clipstate", 1, "selection", 0.0, 1.0, 7, "obj-190", "playlist~", "preset_clipstate", 1, "id", "u347011102", 4, "obj-190", "playlist~", "preset_execute", 5, "obj-278", "playlist~", "preset_count", 7, 7, "obj-278", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 1, "absolutepath", "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav", 7, "obj-278", "playlist~", "preset_clipstate", 1, "filename", "floor1.wav", 7, "obj-278", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 1, "id", "u283009884", 7, "obj-278", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 2, "absolutepath", "2laundry.wav", 7, "obj-278", "playlist~", "preset_clipstate", 2, "filename", "2laundry.wav", 7, "obj-278", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 2, "id", "u081009947", 7, "obj-278", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 3, "absolutepath", "3soujiki.wav", 7, "obj-278", "playlist~", "preset_clipstate", 3, "filename", "3soujiki.wav", 7, "obj-278", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 3, "id", "u351009946", 7, "obj-278", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 4, "absolutepath", "floor6.wav", 7, "obj-278", "playlist~", "preset_clipstate", 4, "filename", "floor6.wav", 7, "obj-278", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 4, "id", "u266010011", 7, "obj-278", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 5, "absolutepath", "boonbon.wav", 7, "obj-278", "playlist~", "preset_clipstate", 5, "filename", "boonbon.wav", 7, "obj-278", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 5, "id", "u254010027", 7, "obj-278", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 6, "absolutepath", "shizuku.wav", 7, "obj-278", "playlist~", "preset_clipstate", 6, "filename", "shizuku.wav", 7, "obj-278", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 6, "id", "u133010025", 7, "obj-278", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "obj-278", "playlist~", "preset_clipstate", 7, "absolutepath", "warabeuta.wav", 7, "obj-278", "playlist~", "preset_clipstate", 7, "filename", "warabeuta.wav", 7, "obj-278", "playlist~", "preset_clipstate", 7, "loop", 0, 8, "obj-278", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "obj-278", "playlist~", "preset_clipstate", 7, "id", "u217010026", 4, "obj-278", "playlist~", "preset_execute" ]
 						}
  ]
 				}
@@ -479,7 +924,6 @@
 					"presentation_rect" : [ 329.0, 248.0, 1066.0, 609.0 ],
 					"text" : "あなたは、目が見えません。\nこれから一人でエレベーターに乗り、\n音だけをたよりに 1階まで降りてもらいます。\n\n1階のフロアの音が聞こえたら上矢印キーを、\nそうでなければ下矢印キーを押してください。\n\n各フロアの音には似ている音があったり、\nちょっと怖いフロアがあったりするので気をつけて。\n無事にエレベーターを降りられるかな？\n\nでは、目的地である1階の音を再生します。\n\nEnterキーを押して説明をスキップ\n",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textjustification" : 0,
 					"varname" : "gameDescriptionText"
 				}
 
@@ -487,82 +931,125 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
-					"clipheight" : 30.588392577894929,
+					"clipheight" : 20.928571951389312,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav",
-								"filename" : "floor1.wav",
+								"absolutepath" : "01_floor1.wav",
+								"filename" : "01_floor1.wav",
 								"filekind" : "audiofile",
-								"id" : "u283009884",
-								"loop" : 0,
+								"id" : "u679004646",
+								"selection" : [ 0.535031847133758, 0.0 ],
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
 , 							{
-								"absolutepath" : "2laundry.wav",
-								"filename" : "2laundry.wav",
+								"absolutepath" : "01_floor1.wav",
+								"filename" : "01_floor1.wav",
 								"filekind" : "audiofile",
-								"id" : "u081009947",
-								"loop" : 0,
+								"id" : "u119001286",
+								"selection" : [ 0.528662420382166, 0.0 ],
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
 , 							{
-								"absolutepath" : "3soujiki.wav",
-								"filename" : "3soujiki.wav",
+								"absolutepath" : "01_floor1.wav",
+								"filename" : "01_floor1.wav",
 								"filekind" : "audiofile",
-								"id" : "u351009946",
-								"loop" : 0,
+								"id" : "u246001294",
+								"selection" : [ 0.528662420382166, 0.0 ],
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
 , 							{
-								"absolutepath" : "floor6.wav",
-								"filename" : "floor6.wav",
+								"absolutepath" : "02_2laundry.wav",
+								"filename" : "02_2laundry.wav",
 								"filekind" : "audiofile",
-								"id" : "u266010011",
-								"loop" : 0,
+								"id" : "u133004666",
+								"selection" : [ 0.535031847133758, 0.0 ],
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
 , 							{
-								"absolutepath" : "boonbon.wav",
-								"filename" : "boonbon.wav",
+								"absolutepath" : "03_3soujiki.wav",
+								"filename" : "03_3soujiki.wav",
 								"filekind" : "audiofile",
-								"id" : "u254010027",
-								"loop" : 0,
+								"id" : "u970004686",
+								"selection" : [ 0.535031847133758, 0.0 ],
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
 , 							{
-								"absolutepath" : "shizuku.wav",
-								"filename" : "shizuku.wav",
+								"absolutepath" : "04_floor6.wav",
+								"filename" : "04_floor6.wav",
 								"filekind" : "audiofile",
-								"id" : "u133010025",
-								"loop" : 0,
+								"id" : "u667004706",
+								"selection" : [ 0.522292993630573, 0.0 ],
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
 , 							{
-								"absolutepath" : "warabeuta.wav",
-								"filename" : "warabeuta.wav",
+								"absolutepath" : "05_floor7.wav",
+								"filename" : "05_floor7.wav",
 								"filekind" : "audiofile",
-								"id" : "u217010026",
-								"loop" : 0,
+								"id" : "u414004726",
+								"selection" : [ 0.528662420382166, 0.0 ],
+								"loop" : 1,
 								"content_state" : 								{
+									"loop" : 1
+								}
 
+							}
+, 							{
+								"absolutepath" : "06_boonbon.wav",
+								"filename" : "06_boonbon.wav",
+								"filekind" : "audiofile",
+								"id" : "u092004742",
+								"selection" : [ 0.522292993630573, 0.0 ],
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+, 							{
+								"absolutepath" : "07_potannpotan.wav",
+								"filename" : "07_potannpotan.wav",
+								"filekind" : "audiofile",
+								"id" : "u334004762",
+								"selection" : [ 0.547770700636943, 0.0 ],
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+, 							{
+								"absolutepath" : "08_warabeuta.wav",
+								"filename" : "08_warabeuta.wav",
+								"filekind" : "audiofile",
+								"id" : "u140004826",
+								"selection" : [ 0.560509554140127, 0.0 ],
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
 								}
 
 							}
@@ -580,7 +1067,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 933.532922446727753, 405.988018870353699, 342.514965772628784, 221.11874804526451 ],
+					"patching_rect" : [ 896.071426033973694, 431.887079656124115, 212.857147932052612, 219.285719513893127 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ],
@@ -641,7 +1128,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1077.92319393157959, 825.2504985567939, 53.0, 22.0 ],
+					"patching_rect" : [ 1077.92319393157959, 836.0, 53.0, 22.0 ],
 					"text" : "s ---hide"
 				}
 
@@ -653,8 +1140,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 114.813829779624939, 524.957446336746216, 29.5, 22.0 ],
-					"text" : "7"
+					"patching_rect" : [ 41.063829779624939, 530.529939413070679, 29.5, 22.0 ],
+					"text" : "9"
 				}
 
 			}
@@ -702,7 +1189,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1429.313226222991943, 935.0, 948.0, 174.0 ],
+					"patching_rect" : [ 1568.270336747169495, 769.0, 948.0, 174.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 387.0, 434.0, 948.0, 174.0 ],
 					"text" : "正解音再生中",
@@ -754,7 +1241,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 983.0, 785.0, 29.5, 22.0 ],
+					"patching_rect" : [ 932.759233057498932, 753.0, 29.5, 22.0 ],
 					"text" : "4"
 				}
 
@@ -788,11 +1275,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/elevator.wav",
-								"filename" : "elevator.wav",
+								"absolutepath" : "doaga.wav",
+								"filename" : "doaga.wav",
 								"filekind" : "audiofile",
-								"id" : "u347011102",
-								"selection" : [ 0.0, 1.0 ],
+								"id" : "u555005297",
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -824,150 +1310,13 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
-					"clipheight" : 20.000002002716066,
+					"clipheight" : 20.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor1.wav",
-								"filename" : "floor1.wav",
+								"absolutepath" : "01_music.wav",
+								"filename" : "01_music.wav",
 								"filekind" : "audiofile",
-								"id" : "u436010547",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/2laundry.wav",
-								"filename" : "2laundry.wav",
-								"filekind" : "audiofile",
-								"id" : "u630010578",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/3soujiki.wav",
-								"filename" : "3soujiki.wav",
-								"filekind" : "audiofile",
-								"id" : "u220010577",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor4.wav",
-								"filename" : "floor4.wav",
-								"filekind" : "audiofile",
-								"id" : "u047010551",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor5.wav",
-								"filename" : "floor5.wav",
-								"filekind" : "audiofile",
-								"id" : "u014010555",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor6.wav",
-								"filename" : "floor6.wav",
-								"filekind" : "audiofile",
-								"id" : "u502010559",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/floor7.wav",
-								"filename" : "floor7.wav",
-								"filekind" : "audiofile",
-								"id" : "u559010563",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/warabeuta.wav",
-								"filename" : "warabeuta.wav",
-								"filekind" : "audiofile",
-								"id" : "u134011114",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/shizuku.wav",
-								"filename" : "shizuku.wav",
-								"filekind" : "audiofile",
-								"id" : "u024011118",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/boonbon.wav",
-								"filename" : "boonbon.wav",
-								"filekind" : "audiofile",
-								"id" : "u384011126",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-79",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 933.532922446727753, 405.988018870353699, 276.153872489929199, 210.000020027160645 ],
-					"pitchcorrection" : 0,
-					"quality" : "basic",
-					"timestretch" : [ 0 ],
-					"varname" : "playlist~[2]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"basictuning" : 440,
-					"clipheight" : 20.289888131916673,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/MenuBGM(仮).wav",
-								"filename" : "MenuBGM(仮).wav",
-								"filekind" : "audiofile",
-								"id" : "u701009816",
+								"id" : "u556004299",
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -975,10 +1324,10 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/setumeiS.wav",
-								"filename" : "setumeiS.wav",
+								"absolutepath" : "02_setumei.wav",
+								"filename" : "02_setumei.wav",
 								"filekind" : "audiofile",
-								"id" : "u408009910",
+								"id" : "u286004319",
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -986,10 +1335,11 @@
 
 							}
 , 							{
-								"absolutepath" : "floor1.wav",
-								"filename" : "floor1.wav",
+								"absolutepath" : "03_floor1.wav",
+								"filename" : "03_floor1.wav",
 								"filekind" : "audiofile",
-								"id" : "u467010362",
+								"id" : "u812004327",
+								"selection" : [ 0.0, 0.552795031055901 ],
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -997,10 +1347,10 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/STARTdesu.wav",
-								"filename" : "STARTdesu.wav",
+								"absolutepath" : "04_STARTdesu.wav",
+								"filename" : "04_STARTdesu.wav",
 								"filekind" : "audiofile",
-								"id" : "u921010417",
+								"id" : "u530004409",
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -1008,10 +1358,10 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/atari.mp3",
-								"filename" : "atari.mp3",
+								"absolutepath" : "05_atari.mp3",
+								"filename" : "05_atari.mp3",
 								"filekind" : "audiofile",
-								"id" : "u900011106",
+								"id" : "u783004590",
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -1019,10 +1369,10 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/Warning.mp3",
-								"filename" : "Warning.mp3",
+								"absolutepath" : "06_Warning.mp3",
+								"filename" : "06_Warning.mp3",
 								"filekind" : "audiofile",
-								"id" : "u479011110",
+								"id" : "u715004606",
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -1030,10 +1380,43 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/tsugumasayutani/Downloads/エレベーター音整音/outside.wav",
-								"filename" : "outside.wav",
+								"absolutepath" : "07_outside.wav",
+								"filename" : "07_outside.wav",
 								"filekind" : "audiofile",
-								"id" : "u643011122",
+								"id" : "u865004626",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "clear.wav",
+								"filename" : "clear.wav",
+								"filekind" : "audiofile",
+								"id" : "u461011172",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "omedeto.wav",
+								"filename" : "omedeto.wav",
+								"filekind" : "audiofile",
+								"id" : "u587005381",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "game over.wav",
+								"filename" : "game over.wav",
+								"filekind" : "audiofile",
+								"id" : "u628005395",
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -1054,7 +1437,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 831.226581871509552, 823.0, 217.692328453063965, 149.029216923416698 ],
+					"patching_rect" : [ 834.968751589457156, 785.0, 216.0, 201.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ],
@@ -1141,7 +1524,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1727.0, 197.729893111885644, 81.0, 22.0 ],
+					"patching_rect" : [ 1809.0, 197.703887617885016, 81.0, 22.0 ],
 					"text" : "s ---fullscreen"
 				}
 
@@ -1154,7 +1537,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1727.0, 159.729893111885644, 24.0, 24.0 ],
+					"patching_rect" : [ 1809.0, 159.703887617885016, 24.0, 24.0 ],
 					"varname" : "button[20]"
 				}
 
@@ -1166,7 +1549,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1727.0, 61.703887617885016, 47.0, 22.0 ],
+					"patching_rect" : [ 1809.0, 61.703887617885016, 47.0, 22.0 ],
 					"text" : "sel 102"
 				}
 
@@ -1179,7 +1562,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1483.063829779624939, 21.768242349624643, 50.0, 22.0 ],
-					"text" : "102"
+					"text" : "30"
 				}
 
 			}
@@ -1446,7 +1829,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
+					"fontsize" : 36.0,
 					"id" : "obj-11",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -1456,7 +1839,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 463.813829779624939, 16.768242349624643, 74.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1146.0, 926.0, 303.0, 85.0 ],
+					"presentation_rect" : [ 1155.0, 944.0, 338.0, 68.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -1468,7 +1851,7 @@
 
 					}
 ,
-					"text" : "START",
+					"text" : "START(ENTER)",
 					"texton" : "RESTART",
 					"varname" : "startButton"
 				}
@@ -1584,7 +1967,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 552.501329779625053, 808.740187430084802, 133.0, 22.0 ],
+					"patching_rect" : [ 506.166896224021912, 820.0, 133.0, 22.0 ],
 					"text" : "s ---updownKeyDisable"
 				}
 
@@ -1700,13 +2083,14 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 0.75 ],
+					"fontface" : 0,
 					"fontsize" : 150.0,
 					"hidden" : 1,
 					"id" : "obj-214",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1428.053513050079346, 1451.086114704608917, 619.0, 203.0 ],
+					"patching_rect" : [ 1428.053513050079346, 1451.086114704608917, 620.0, 203.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 547.0, 434.0, 619.0, 203.0 ],
 					"text" : "続行🙆‍♀️️",
@@ -1723,7 +2107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 626.001329779624939, 745.957446336746216, 76.0, 22.0 ],
+					"patching_rect" : [ 650.5, 737.0, 76.0, 22.0 ],
 					"text" : "continueText"
 				}
 
@@ -1891,7 +2275,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 595.03431844234467, 670.679073929786682, 73.0, 22.0 ],
+					"patching_rect" : [ 597.0, 650.0, 73.0, 22.0 ],
 					"text" : "inGameText"
 				}
 
@@ -1927,7 +2311,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 606.786896224021916, 712.347446336746202, 89.0, 22.0 ],
+					"patching_rect" : [ 650.5, 692.0, 89.0, 22.0 ],
 					"text" : "inGameScreen"
 				}
 
@@ -1938,20 +2322,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 640.001329779624825, 775.750498556793787, 53.0, 22.0 ],
+					"patching_rect" : [ 597.0, 785.0, 53.0, 22.0 ],
 					"text" : "s ---hide"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-132",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 507.81349624156951, 712.347446336746202, 67.0, 22.0 ],
-					"text" : "delay 3000"
 				}
 
 			}
@@ -1974,7 +2346,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 507.81349624156951, 745.957446336746216, 102.0, 22.0 ],
+					"patching_rect" : [ 464.916896224021912, 737.0, 102.0, 22.0 ],
 					"text" : "s ---continueLoop"
 				}
 
@@ -2102,7 +2474,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 243.063829779624939, 706.957446336746216, 55.0, 22.0 ],
-					"text" : "del 3000"
+					"text" : "del 6000"
 				}
 
 			}
@@ -2114,7 +2486,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 22.710429797172544, 712.347446336746202, 67.0, 22.0 ],
-					"text" : "delay 3000"
+					"text" : "delay 6000"
 				}
 
 			}
@@ -2196,18 +2568,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 816.0, 451.0, 41.0, 22.0 ],
 					"text" : "pause"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-75",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 509.063829779624939, 296.332759893237494, 91.237116694450378, 32.0 ],
-					"text" : "お手本プレイを追加"
 				}
 
 			}
@@ -2431,13 +2791,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-202",
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1076.0, 876.844035148620605, 157.0, 62.0 ],
-					"text" : "start 1 \"Macintosh HD:/Users/tsugumasayutani/Downloads/エレベーター音整音/MenuBGM(仮).wav\""
+					"patching_rect" : [ 1076.0, 876.844035148620605, 157.0, 22.0 ],
+					"text" : "start 1 01_music.wav"
 				}
 
 			}
@@ -2734,36 +3093,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-161",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 22.710429797172544, 953.344035148620605, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-160",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 831.0, 989.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-159",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 911.538548469543457, 633.846214294433594, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
@@ -2862,7 +3191,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 41.063829779624939, 564.729893111885644, 67.0, 22.0 ],
+					"patching_rect" : [ 55.474452257156372, 564.729893111885758, 67.0, 22.0 ],
 					"text" : "correctText"
 				}
 
@@ -2870,38 +3199,20 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 0.75 ],
+					"fontface" : 0,
 					"fontsize" : 150.0,
 					"hidden" : 1,
 					"id" : "obj-144",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1428.053513050079346, 1682.192496716976166, 636.0, 203.0 ],
+					"patching_rect" : [ 1428.053513050079346, 1682.192496716976166, 637.0, 203.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 538.0, 434.0, 636.0, 203.0 ],
 					"text" : "不正解🙅‍♀️",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1,
 					"varname" : "notCorrectText"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.75 ],
-					"fontsize" : 150.0,
-					"hidden" : 1,
-					"id" : "obj-143",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1428.053513050079346, 1571.192496716976166, 619.0, 203.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 547.0, 434.0, 619.0, 203.0 ],
-					"text" : "正解🙆️",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textjustification" : 1,
-					"varname" : "correctText"
 				}
 
 			}
@@ -3075,7 +3386,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 269.063829779624939, 524.957446336746216, 29.5, 22.0 ],
-					"text" : "6"
+					"text" : "10"
 				}
 
 			}
@@ -3085,7 +3396,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1662.744558930397034, 697.240530633629419, 86.0, 22.0 ],
+					"patching_rect" : [ 1538.270336747169495, 697.240530633629533, 86.0, 22.0 ],
 					"text" : "s ---notCorrect"
 				}
 
@@ -3096,7 +3407,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1538.270336747169495, 697.240530633629419, 75.0, 22.0 ],
+					"patching_rect" : [ 1746.39165472984314, 697.240530633629533, 75.0, 22.0 ],
 					"text" : "s ---continue"
 				}
 
@@ -3130,7 +3441,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1220.127659559249878, 697.240530633629419, 66.0, 22.0 ],
+					"patching_rect" : [ 1237.877659559249878, 679.0, 66.0, 22.0 ],
 					"text" : "s ---correct"
 				}
 
@@ -3148,23 +3459,11 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-104",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 41.063829779624939, 524.957446336746216, 29.5, 22.0 ],
-					"text" : "5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1694.744558930397034, 659.240530633629419, 54.0, 20.0 ],
+					"patching_rect" : [ 1570.229097843170166, 659.096202873886796, 54.0, 20.0 ],
 					"text" : "不正解"
 				}
 
@@ -3175,7 +3474,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1568.270336747169495, 663.240530633629419, 41.0, 20.0 ],
+					"patching_rect" : [ 1776.288560271263123, 663.219913983048173, 41.0, 20.0 ],
 					"text" : "正解"
 				}
 
@@ -3188,7 +3487,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1662.744558930397034, 659.240530633629419, 24.0, 24.0 ],
+					"patching_rect" : [ 1538.270336747169495, 659.096202873886796, 24.0, 24.0 ],
 					"varname" : "button[5]"
 				}
 
@@ -3201,7 +3500,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1538.270336747169495, 659.240530633629419, 24.0, 24.0 ],
+					"patching_rect" : [ 1746.39165472984314, 659.096202873886796, 24.0, 24.0 ],
 					"varname" : "button[4]"
 				}
 
@@ -3213,8 +3512,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1538.270336747169495, 597.240530633629419, 223.0, 22.0 ],
-					"text" : "if $i1 != 1 then out1 bang else out2 bang"
+					"patching_rect" : [ 1538.270336747169495, 597.240530633629419, 227.0, 22.0 ],
+					"text" : "if $i1 <= 3 then out1 bang else out2 bang"
 				}
 
 			}
@@ -3226,13 +3525,13 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1538.270336747169495, 557.240530633629419, 50.0, 22.0 ],
-					"text" : "4"
+					"text" : "6"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
+					"fontsize" : 36.0,
 					"hidden" : 1,
 					"id" : "obj-96",
 					"maxclass" : "live.text",
@@ -3243,7 +3542,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1626.270336747169495, 353.240530633629419, 79.794822812080383, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1145.0, 927.0, 306.0, 84.0 ],
+					"presentation_rect" : [ 1155.0, 944.5, 338.0, 67.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -3255,7 +3554,7 @@
 
 					}
 ,
-					"text" : "降りない",
+					"text" : "降りない(↓キー)",
 					"varname" : "stayInElevator"
 				}
 
@@ -3277,7 +3576,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1250.127659559249878, 663.240530633629419, 41.0, 20.0 ],
+					"patching_rect" : [ 1267.877659559249878, 645.0, 41.0, 20.0 ],
 					"text" : "正解"
 				}
 
@@ -3303,7 +3602,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1220.127659559249878, 659.240530633629419, 24.0, 24.0 ],
+					"patching_rect" : [ 1237.877659559249878, 641.0, 24.0, 24.0 ],
 					"varname" : "button[2]"
 				}
 
@@ -3315,8 +3614,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1221.127659559249878, 597.240530633629419, 227.0, 22.0 ],
-					"text" : "if $i1 == 1 then out1 bang else out2 bang"
+					"patching_rect" : [ 1237.877659559249878, 597.240530633629533, 227.0, 22.0 ],
+					"text" : "if $i1 <= 3 then out1 bang else out2 bang"
 				}
 
 			}
@@ -3327,8 +3626,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1221.127659559249878, 557.240530633629419, 50.0, 22.0 ],
-					"text" : "4"
+					"patching_rect" : [ 1237.877659559249878, 557.240530633629533, 50.0, 22.0 ],
+					"text" : "6"
 				}
 
 			}
@@ -3431,7 +3730,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
+					"fontsize" : 36.0,
 					"hidden" : 1,
 					"id" : "obj-56",
 					"maxclass" : "live.text",
@@ -3442,7 +3741,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1188.666418373584747, 329.240530633629419, 79.794822812080383, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1145.0, 829.0, 306.0, 84.0 ],
+					"presentation_rect" : [ 1155.0, 866.0, 338.0, 67.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -3454,7 +3753,7 @@
 
 					}
 ,
-					"text" : "降りる",
+					"text" : "降りる(↑キー)",
 					"varname" : "exitElevator"
 				}
 
@@ -3683,14 +3982,15 @@
 					"bgcolor" : [ 0.12156862745098, 0.117647058823529, 0.117647058823529, 0.5 ],
 					"fontsize" : 108.0,
 					"id" : "obj-57",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1407.187529683113098, 1163.873152303101733, 829.0, 248.0 ],
+					"patching_rect" : [ 1407.187529683113098, 1163.873152303101733, 829.0, 368.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 297.0, 157.0, 1075.0, 127.0 ],
-					"text" : "I don't like elevators",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 297.0, 157.0, 1075.0, 248.0 ],
+					"text" : "Ordinary Unfriendly Elevator",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"textjustification" : 1,
 					"varname" : "gameTitle"
@@ -3920,14 +4220,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
-					"source" : [ "obj-101", 0 ]
+					"source" : [ "obj-101", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-99", 0 ],
-					"source" : [ "obj-101", 1 ]
+					"source" : [ "obj-101", 0 ]
 				}
 
 			}
@@ -3947,40 +4247,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-148", 0 ],
-					"order" : 1,
-					"source" : [ "obj-104", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-153", 0 ],
-					"order" : 0,
-					"source" : [ "obj-104", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-64", 0 ],
-					"order" : 2,
-					"source" : [ "obj-104", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-104", 0 ],
-					"order" : 1,
-					"source" : [ "obj-108", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-257", 0 ],
-					"order" : 0,
 					"source" : [ "obj-108", 0 ]
 				}
 
@@ -4027,6 +4294,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-115", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"source" : [ "obj-116", 0 ]
 				}
 
 			}
@@ -4095,22 +4369,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-137", 0 ],
-					"order" : 1,
-					"source" : [ "obj-132", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-213", 0 ],
-					"order" : 0,
-					"source" : [ "obj-132", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-131", 0 ],
 					"source" : [ "obj-133", 0 ]
 				}
@@ -4133,14 +4391,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-132", 0 ],
-					"order" : 3,
-					"source" : [ "obj-135", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-162", 0 ],
 					"order" : 1,
 					"source" : [ "obj-135", 0 ]
@@ -4152,6 +4402,20 @@
 					"destination" : [ "obj-229", 0 ],
 					"order" : 2,
 					"source" : [ "obj-135", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-159", 0 ],
+					"source" : [ "obj-138", 0 ]
 				}
 
 			}
@@ -4253,15 +4517,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-161", 1 ],
-					"source" : [ "obj-156", 1 ]
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-156", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-161", 0 ],
-					"source" : [ "obj-156", 0 ]
+					"destination" : [ "obj-80", 0 ],
+					"source" : [ "obj-156", 1 ]
 				}
 
 			}
@@ -4281,8 +4545,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-74", 1 ],
+					"source" : [ "obj-159", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-257", 0 ],
+					"source" : [ "obj-160", 0 ]
 				}
 
 			}
@@ -4297,6 +4575,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-156", 0 ],
 					"source" : [ "obj-163", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-164", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-165", 0 ]
 				}
 
 			}
@@ -4453,6 +4745,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-245", 0 ],
+					"source" : [ "obj-172", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-131", 0 ],
 					"source" : [ "obj-173", 0 ]
 				}
@@ -4572,15 +4871,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-159", 1 ],
-					"source" : [ "obj-190", 1 ]
+					"destination" : [ "obj-164", 0 ],
+					"source" : [ "obj-190", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-159", 0 ],
-					"source" : [ "obj-190", 0 ]
+					"destination" : [ "obj-165", 0 ],
+					"source" : [ "obj-190", 1 ]
 				}
 
 			}
@@ -4643,7 +4942,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-225", 0 ],
-					"order" : 4,
+					"order" : 5,
+					"source" : [ "obj-200", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-233", 0 ],
+					"order" : 1,
 					"source" : [ "obj-200", 0 ]
 				}
 
@@ -4651,7 +4958,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-200", 0 ]
 				}
 
@@ -4659,7 +4966,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-262", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-200", 0 ]
 				}
 
@@ -4667,7 +4974,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-272", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-200", 0 ]
 				}
 
@@ -4683,7 +4990,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"order" : 5,
+					"order" : 6,
 					"source" : [ "obj-200", 0 ]
 				}
 
@@ -4692,6 +4999,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-216", 1 ],
 					"source" : [ "obj-201", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-203", 0 ]
 				}
 
 			}
@@ -4713,6 +5027,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-284", 1 ],
 					"source" : [ "obj-210", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-212", 0 ],
+					"source" : [ "obj-211", 0 ]
 				}
 
 			}
@@ -4757,6 +5078,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-137", 0 ],
+					"order" : 1,
+					"source" : [ "obj-217", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-213", 0 ],
+					"order" : 0,
+					"source" : [ "obj-217", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-234", 0 ],
 					"source" : [ "obj-219", 0 ]
 				}
@@ -4775,6 +5112,13 @@
 					"destination" : [ "obj-216", 0 ],
 					"order" : 0,
 					"source" : [ "obj-220", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-221", 0 ]
 				}
 
 			}
@@ -4841,7 +5185,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-263", 0 ],
+					"source" : [ "obj-233", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-231", 0 ],
+					"order" : 3,
+					"source" : [ "obj-234", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-237", 0 ],
 					"order" : 1,
 					"source" : [ "obj-234", 0 ]
 				}
@@ -4849,7 +5208,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-261", 0 ],
+					"destination" : [ "obj-246", 0 ],
 					"order" : 0,
 					"source" : [ "obj-234", 0 ]
 				}
@@ -4857,8 +5216,32 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-261", 0 ],
+					"order" : 2,
+					"source" : [ "obj-234", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-236", 0 ],
+					"order" : 1,
 					"source" : [ "obj-235", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-253", 0 ],
+					"order" : 0,
+					"source" : [ "obj-235", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-258", 0 ],
+					"source" : [ "obj-237", 0 ]
 				}
 
 			}
@@ -4892,22 +5275,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-242", 0 ],
+					"source" : [ "obj-246", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-249", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-160", 1 ],
-					"source" : [ "obj-25", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-160", 0 ],
-					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -4924,6 +5300,20 @@
 					"destination" : [ "obj-50", 0 ],
 					"order" : 1,
 					"source" : [ "obj-25", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-79", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -4950,7 +5340,38 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-254", 0 ],
+					"source" : [ "obj-253", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-255", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-148", 0 ],
+					"order" : 1,
+					"source" : [ "obj-257", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-153", 0 ],
+					"order" : 0,
+					"source" : [ "obj-257", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"order" : 2,
 					"source" : [ "obj-257", 0 ]
 				}
 
@@ -5034,15 +5455,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-159", 1 ],
-					"source" : [ "obj-278", 1 ]
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-278", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-159", 0 ],
-					"source" : [ "obj-278", 0 ]
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-278", 1 ]
 				}
 
 			}
@@ -5167,6 +5588,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-43", 0 ]
 				}
@@ -5176,6 +5604,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -5195,7 +5630,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-235", 0 ],
+					"destination" : [ "obj-116", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-211", 0 ],
 					"order" : 0,
 					"source" : [ "obj-50", 0 ]
 				}
@@ -5203,8 +5645,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-235", 0 ],
+					"order" : 1,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -5212,7 +5662,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -5312,14 +5762,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-79", 0 ],
-					"disabled" : 1,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-83", 1 ],
 					"order" : 1,
 					"source" : [ "obj-55", 0 ]
@@ -5345,6 +5787,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-198", 0 ],
 					"order" : 4,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-203", 0 ],
+					"order" : 8,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -5517,7 +5967,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
-					"order" : 7,
+					"order" : 8,
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -5564,8 +6014,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-221", 0 ],
+					"order" : 9,
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-249", 0 ],
-					"order" : 10,
+					"order" : 12,
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-255", 0 ],
+					"order" : 7,
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -5589,7 +6055,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
-					"order" : 8,
+					"order" : 10,
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -5597,7 +6063,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
-					"order" : 9,
+					"order" : 11,
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -5605,7 +6071,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"order" : 11,
+					"order" : 13,
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -5647,6 +6113,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-138", 0 ],
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-222", 0 ],
 					"midpoints" : [ 465.5, 1032.0, 408.0, 1032.0, 408.0, 960.0, 430.5, 960.0 ],
 					"order" : 1,
@@ -5664,29 +6137,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-159", 1 ],
-					"source" : [ "obj-79", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-159", 0 ],
-					"source" : [ "obj-79", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-278", 0 ],
-					"source" : [ "obj-82", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-79", 0 ],
-					"disabled" : 1,
 					"source" : [ "obj-82", 0 ]
 				}
 
@@ -5714,7 +6165,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-207", 0 ],
+					"order" : 1,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
+					"order" : 0,
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -5766,6 +6226,7 @@
  ],
 		"parameters" : 		{
 			"obj-11" : [ "live.text", "live.text", 0 ],
+			"obj-172" : [ "RestartButton", "RestartButton", 0 ],
 			"obj-56" : [ "exitElevator", "exitElevator", 0 ],
 			"obj-96" : [ "stayInElevator", "stayInElevator", 0 ],
 			"parameterbanks" : 			{
@@ -5781,16 +6242,107 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "2laundry.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
+				"name" : "01_floor1.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "3soujiki.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
+				"name" : "01_music.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "02_2laundry.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "02_setumei.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "03_3soujiki.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "03_floor1.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "04_STARTdesu.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "04_floor6.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "05_atari.mp3",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "05_floor7.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "06_Warning.mp3",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "06_boonbon.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "07_outside.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "07_potannpotan.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "08_warabeuta.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5809,41 +6361,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MenuBGM(仮).wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "STARTdesu.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Warning.mp3",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "atari.mp3",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "boonbon.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "buttonClickSound.mp3",
 				"bootpath" : "~/Documents/GitHub/ccbt_audiogame_teamc",
 				"patcherrelativepath" : "../../../ccbt_audiogame_teamc",
@@ -5851,72 +6368,34 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "elevator.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
+				"name" : "clear.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "floor1.wav",
-				"bootpath" : "~/Downloads/共有フォルダ",
-				"patcherrelativepath" : "../../../../../Downloads/共有フォルダ",
+				"name" : "dcblock~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "doaga.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "floor4.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
+				"name" : "game over.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "floor5.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "floor6.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "floor7.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "outside.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "setumeiS.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "shizuku.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "warabeuta.wav",
-				"bootpath" : "~/Downloads/エレベーター音整音",
-				"patcherrelativepath" : "../../../../../Downloads/エレベーター音整音",
+				"name" : "omedeto.wav",
+				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
