@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 1680.0, 1119.0 ],
+		"rect" : [ 34.0, 87.0, 1612.0, 929.0 ],
 		"openrect" : [ 0.0, 0.0, 1680.0, 1119.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -22,7 +22,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -40,6 +40,53 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-207",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 154.0, 99.0, 125.0, 22.0 ],
+					"text" : "s ---pauseEntrySound"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-183",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 892.612693786621094, 125.0, 123.0, 22.0 ],
+					"text" : "r ---pauseEntrySound"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-205",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 892.612693786621094, 159.0, 41.0, 22.0 ],
+					"text" : "pause"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 120.813829779624939, 70.703887617885016, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 0.75 ],
 					"fontface" : 0,
@@ -234,19 +281,6 @@
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 1318.0, 1051.0, 34.0, 22.0 ],
 					"text" : "sel 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-207",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 792.0, 498.957446336746216, 24.0, 24.0 ],
-					"varname" : "button[24]"
 				}
 
 			}
@@ -570,7 +604,7 @@
 					"patching_rect" : [ 613.0, 1051.0, 151.0, 23.0 ],
 					"restore" : 					{
 						"RestartButton" : [ 0.0 ],
-						"button" : [ 1.0 ],
+						"button" : [ 0.0 ],
 						"button[10]" : [ 1.0 ],
 						"button[11]" : [ 1.0 ],
 						"button[12]" : [ 1.0 ],
@@ -586,7 +620,6 @@
 						"button[21]" : [ 1.0 ],
 						"button[22]" : [ 1.0 ],
 						"button[23]" : [ 0.0 ],
-						"button[24]" : [ 1.0 ],
 						"button[2]" : [ 1.0 ],
 						"button[3]" : [ 1.0 ],
 						"button[4]" : [ 1.0 ],
@@ -1563,7 +1596,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1483.063829779624939, 21.768242349624643, 50.0, 22.0 ],
-					"text" : "27"
+					"text" : "127"
 				}
 
 			}
@@ -3526,7 +3559,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1538.270336747169495, 557.240530633629419, 50.0, 22.0 ],
-					"text" : "6"
+					"text" : "4"
 				}
 
 			}
@@ -3628,7 +3661,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1237.877659559249878, 557.240530633629533, 50.0, 22.0 ],
-					"text" : "6"
+					"text" : "4"
 				}
 
 			}
@@ -3779,7 +3812,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 973.063829779624939, 110.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1115.242813944816589, 78.0, 24.0, 24.0 ],
 					"varname" : "button"
 				}
 
@@ -4651,7 +4684,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-167", 0 ],
-					"order" : 5,
+					"order" : 6,
+					"source" : [ "obj-169", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-207", 0 ],
+					"order" : 1,
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -4659,7 +4700,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-226", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -4667,7 +4708,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-271", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -4683,7 +4724,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
-					"order" : 4,
+					"order" : 5,
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -4691,7 +4732,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -4802,8 +4843,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-169", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-180", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-205", 0 ],
+					"source" : [ "obj-183", 0 ]
 				}
 
 			}
@@ -5007,6 +5062,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-203", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-205", 0 ]
 				}
 
 			}
@@ -5596,7 +5658,64 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-133", 0 ],
+					"order" : 2,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-134", 0 ],
+					"order" : 3,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-173", 0 ],
+					"order" : 1,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-174", 0 ],
+					"order" : 0,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-252", 0 ],
+					"order" : 7,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-273", 0 ],
+					"order" : 6,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-281", 0 ],
+					"order" : 5,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
+					"order" : 4,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -5665,62 +5784,6 @@
 					"destination" : [ "obj-88", 0 ],
 					"order" : 2,
 					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-133", 0 ],
-					"order" : 2,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-134", 0 ],
-					"order" : 3,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-173", 0 ],
-					"order" : 1,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-174", 0 ],
-					"order" : 0,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-252", 0 ],
-					"order" : 6,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-273", 0 ],
-					"order" : 5,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-281", 0 ],
-					"order" : 4,
-					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -6166,16 +6229,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-207", 0 ],
-					"order" : 1,
-					"source" : [ "obj-85", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
-					"order" : 0,
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -6244,105 +6298,105 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "01_floor1.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "01_music.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "02_2laundry.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "02_setumei.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "03_3soujiki.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "03_floor1.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "04_STARTdesu.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "04_floor6.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "05_atari.mp3",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "Mp3",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "05_floor7.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "06_Warning.mp3",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "Mp3",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "06_boonbon.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "07_outside.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "07_potannpotan.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "08_warabeuta.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
@@ -6350,27 +6404,27 @@
 , 			{
 				"name" : "IMG_7506.jpg",
 				"bootpath" : "~/Downloads/iloveimg-converted",
-				"patcherrelativepath" : "../../../../../Downloads/iloveimg-converted",
+				"patcherrelativepath" : "../../../../Downloads/iloveimg-converted",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "IMG_7509.jpg",
 				"bootpath" : "~/Downloads/iloveimg-converted",
-				"patcherrelativepath" : "../../../../../Downloads/iloveimg-converted",
+				"patcherrelativepath" : "../../../../Downloads/iloveimg-converted",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "buttonClickSound.mp3",
 				"bootpath" : "~/Documents/GitHub/ccbt_audiogame_teamc",
-				"patcherrelativepath" : "../../../ccbt_audiogame_teamc",
+				"patcherrelativepath" : "../../../../Documents/GitHub/ccbt_audiogame_teamc",
 				"type" : "Mp3",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "clear.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
@@ -6381,21 +6435,21 @@
 			}
 , 			{
 				"name" : "doaga.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "game over.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "omedeto.wav",
-				"bootpath" : "~/Documents/GitHub/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
+				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
