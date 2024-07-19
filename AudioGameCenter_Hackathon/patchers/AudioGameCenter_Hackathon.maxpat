@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 6,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1612.0, 929.0 ],
+		"rect" : [ 0.0, 87.0, 1680.0, 1119.0 ],
 		"openrect" : [ 0.0, 0.0, 1680.0, 1119.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -103,18 +103,6 @@
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1,
 					"varname" : "correctText"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-260",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "", "" ],
-					"patching_rect" : [ 1137.0, 608.0, 58.0, 22.0 ],
-					"text" : "array.pop"
 				}
 
 			}
@@ -398,18 +386,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-138",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1416.0, 874.5, 56.0, 22.0 ],
-					"text" : "dcblock~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-136",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -417,18 +393,6 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1326.0, 913.0, 61.0, 22.0 ],
 					"text" : "clip~ -1. 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-116",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1327.0, 874.5, 56.0, 22.0 ],
-					"text" : "dcblock~"
 				}
 
 			}
@@ -634,7 +598,7 @@
 						"gswitch2[2]" : [ 1 ],
 						"gswitch2[3]" : [ 0 ],
 						"gswitch2[4]" : [ 0 ],
-						"gswitch2[5]" : [ 0 ],
+						"gswitch2[5]" : [ 1 ],
 						"playlist~" : [ 							{
 								"data" : 								{
 									"clips" : [ 										{
@@ -1507,6 +1471,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-222",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -3823,7 +3788,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 973.0, 314.0, 59.0, 22.0 ],
 					"text" : "random 7"
 				}
@@ -4333,13 +4298,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-136", 0 ],
-					"source" : [ "obj-116", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"source" : [ "obj-117", 0 ]
 				}
@@ -4443,13 +4401,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
 					"source" : [ "obj-136", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-159", 0 ],
-					"source" : [ "obj-138", 0 ]
 				}
 
 			}
@@ -5750,7 +5701,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-116", 0 ],
+					"destination" : [ "obj-136", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -6177,7 +6128,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-138", 0 ],
+					"destination" : [ "obj-159", 0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -6297,161 +6248,17 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "01_floor1.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "01_music.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "02_2laundry.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "02_setumei.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "03_3soujiki.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "03_floor1.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "04_STARTdesu.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "04_floor6.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "05_atari.mp3",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "05_floor7.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "06_Warning.mp3",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "06_boonbon.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "07_outside.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "07_potannpotan.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08_warabeuta.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "IMG_7506.jpg",
 				"bootpath" : "~/Downloads/iloveimg-converted",
-				"patcherrelativepath" : "../../../../Downloads/iloveimg-converted",
+				"patcherrelativepath" : "../../../../../Downloads/iloveimg-converted",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "IMG_7509.jpg",
 				"bootpath" : "~/Downloads/iloveimg-converted",
-				"patcherrelativepath" : "../../../../Downloads/iloveimg-converted",
+				"patcherrelativepath" : "../../../../../Downloads/iloveimg-converted",
 				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "buttonClickSound.mp3",
-				"bootpath" : "~/Documents/GitHub/ccbt_audiogame_teamc",
-				"patcherrelativepath" : "../../../../Documents/GitHub/ccbt_audiogame_teamc",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clear.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dcblock~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "doaga.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "game over.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "omedeto.wav",
-				"bootpath" : "~/Desktop/AudioGameCenter_Hackathon/AudioGameCenter_Hackathon/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
